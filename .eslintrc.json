@@ -1,3 +1,40 @@
 {
-  "extends": ["next/core-web-vitals", "next/typescript", "prettier"]
+  "extends": [
+    "next/core-web-vitals",
+    "next/typescript",
+    "prettier",
+    "plugin:tailwindcss/recommended"
+  ],
+  "rules": {
+    "tailwindcss/classnames-order": [
+      "warn",
+      {
+        "callees": ["cva", "cn"]
+      }
+    ],
+    "tailwindcss/enforces-negative-arbitrary-values": [
+      "warn",
+      {
+        "callees": ["cva", "cn"]
+      }
+    ],
+    "tailwindcss/enforces-shorthand": [
+      "warn",
+      {
+        "callees": ["cva", "cn"]
+      }
+    ],
+    "tailwindcss/no-contradicting-lassname": [
+      "warn",
+      {
+        "callees": ["cva", "cn"]
+      }
+    ],
+    "tailwindcss/no-custom-classname": [
+      "warn",
+      {
+        "callees": ["cva", "cn"]
+      }
+    ]
+  }
 }
