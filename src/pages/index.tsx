@@ -1,9 +1,11 @@
-import { cn, cva } from '@/utils/style'
-import { createClient } from '@supabase/supabase-js'
+import { Inter } from 'next/font/google'
 
-const supabase = createClient()
-const button = cva('flex')
+const inter = Inter({ subsets: ['latin'] })
+
 export default function Home() {
-  supabase
-  return <h3> 안녕 블로그</h3>
+  return (
+    <main className="h-[2000px]">
+      <h3> 안녕 블로그</h3>
+    </main>
+  )
 }
